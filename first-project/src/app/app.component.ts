@@ -3,7 +3,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: '<h2> {{title}} </h2>'
+  template: `
+  <app-customers> </app-customers>
+  `
+  
+  
   
 })
 export class AppComponent implements OnInit {
