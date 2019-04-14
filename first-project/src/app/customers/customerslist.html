@@ -7,6 +7,12 @@
 </div>
 
 <button (click)="showhideHeading()">show/hide</button>
+<br/>
+<app-filteredtextbox></app-filteredtextbox>
+
+
+
+{{search}}
 
 <table class="table table-hover">
 <tr>
@@ -20,7 +26,7 @@
         {{cust.Id}}
     </td>
     <td> 
-        {{cust.Name}}
+        {{cust.Name | capitalizePipe}}
     </td>
     <td>
         {{cust.Designation}}
