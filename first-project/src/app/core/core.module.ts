@@ -5,7 +5,7 @@ import { CustomerService } from "./customer.service";
 
  @NgModule({
     imports: [],
-    providers: []
+    providers: [CustomerService]
 })
 
 export class CoreModule{

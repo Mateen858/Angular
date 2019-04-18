@@ -9,8 +9,10 @@ import { map, catchError } from 'rxjs/operators'
 @Injectable()
 export class CustomerService{
 
+
     constructor(private http: HttpClient){    }
-get Customers () : Observable<any[]>{
+
+getCustomers () : Observable<any[]>{
     return this.http.get<any[]>("../assets/customer.json").pipe(
 catchError(this.handleError)
 
