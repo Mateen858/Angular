@@ -13,7 +13,7 @@ export class CustomerComponent implements OnInit {
     customer: any[];
 
    
-    constructor(private customerService : CustomerService){
+    constructor( private customerService : CustomerService ){
        
         this.customerService.getCustomers().subscribe((customers : any[])=> this.customer = customers
         );

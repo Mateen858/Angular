@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import {CustomersModule} from './customers/customers.module';
 
 import {SharedModule} from './shared/shared.module';
-// import { CoreModule } from "./core/core.module";
+import {HttpClientModule} from '@angular/common/http';
+import { CoreModule } from "./core/core.module";
 
 
 
@@ -20,7 +21,8 @@ import {SharedModule} from './shared/shared.module';
     AppRoutingModule,
     CustomersModule,
     SharedModule,
-    // CoreModule
+    HttpClientModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
