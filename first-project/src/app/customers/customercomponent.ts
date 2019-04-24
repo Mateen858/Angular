@@ -28,4 +28,22 @@ export class CustomerComponent implements OnInit {
     // {Id:3, Name:"ahsan from parent", Designation: "Full Stack Developer"}
     // ]
     }
+
+    // how to get id from url routing
+//     constructor(private dataService: DataService, 
+//         private route: ActivatedRoute) { }
+
+// ngOnInit() {
+// let id = +this.route.snapshot.paramMap.get('id');
+// this.dataService.getOrders(id).subscribe((orders: IOrder[]) => {
+// this.orders = orders;
+// });
+
+// this.dataService.getCustomer(id).subscribe((customer: ICustomer) => {
+// this.customer = customer;
+// });
+// }
+
+
+
 }

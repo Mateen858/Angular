@@ -26,6 +26,12 @@
         {{cust.Id}}
     </td>
     <td> 
+<!-- 
+    send id in link. for a variable link we give values like this
+            <a [routerLink]="['/orders', cust.id]">
+                {{ cust.name | capitalize }}
+            </a> -->
+
         {{cust.Name | capitalizePipe}}
     </td>
     <td>
@@ -34,3 +40,5 @@
 </tr>
 
 </table>
+<!-- for a hardcoded link we give values like this -->
+<a routerLink="/customers">View All Customers</a>
